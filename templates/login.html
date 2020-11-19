@@ -1,0 +1,36 @@
+{% extends 'header.html' %}{% block body %}
+<div class="login-wrap1">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<form action='/login' method='POST'>
+					<div class="group">
+						<label for="user" class="label">Username</label>
+						<input id="user" name="username" type="text" class="input" required>
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Password</label>
+						<input id="pass" name="password" type="password" class="input" data-type="password" required>
+					</div>
+					<div class="group">
+						<input id="check" name="checkbox" type="checkbox" class="check" required>
+						<label for="check"><span class="icon"></span> Keep me Signed in</label>
+					</div>
+					<div class="group">
+						<input type="submit" class="button" value="Sign In">
+					</div>
+					<div class="hr"></div>
+					<div class="foot-lnk">
+						<a href="/sendmail" >Forgot Password?</a>
+					</div>
+					<div class="foot-lnk">
+						<p style="color:#aaa;margin-top: 5px;margin-bottom: 30px;">Don't have an account? &nbsp <a href="/register"> Sign up</a></p>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+{% endblock %}

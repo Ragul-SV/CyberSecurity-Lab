@@ -1,0 +1,117 @@
+{% extends 'header.html' %}{% block body %}
+
+<div class="card text-center" style="margin-top: 30px;">
+    <div class="card-header">
+        <ul class="nav nav-pills card-header-pills">
+            <li
+                class="nav-item"
+                style="
+                    display: block;
+                    margin-left: auto;
+                    margin-right: 0;
+                    background: linear-gradient(to right, #ed213a, #93291e);
+                    border-radius: 25px;
+                    color: white;
+                "
+            >
+                <a class="nav-link" style="color: white;" href="/predict/{{name}}"
+                    >Predict Completion Time</a
+                >
+            </li>
+        </ul>
+    </div>
+    <div class="card-body">
+        <h3 class="card-title">{{name}}</h3>
+        <p class="card-text" style="margin: 30px 15%;">
+            Vulnerability Assessment and Penetration Testing describes a broad range of security
+            testing services designed to help identify and eliminate cyber security exposures.
+        </p>
+        <a href="#" class="btn btn-primary">Attacker Machine</a>
+        <a href="#" class="btn btn-warning">Victim Machine</a>
+        <a href="#" class="btn btn-danger">Stop Lab</a>
+        <hr />
+        <form action="/regstu" method="POST">
+            <div class="sign-in-htm">
+                <div class="group">
+                    <label for="user" class="label">Your Answer: </label>
+                    <input
+                        id="user"
+                        name="username"
+                        type="text"
+                        style="height: 30px; font-size: 14pt;"
+                        class="input"
+                        required
+                    />
+                    <input
+                        type="submit"
+                        style="
+                            font-size: 16px;
+                            background: linear-gradient(to right, #11998e, #38ef7d);
+                        "
+                        class="btn btn-primary"
+                        value="Submit"
+                    />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="card text-center" style="margin-top: 30px;">
+                <div class="card-body" style="text-align: left !important;">
+                    <h3 class="card-title"><em class="fas fa-wrench"></em>  Instructions</h3>
+                    <ul
+                         style="text-align: left !important;"
+                        class="card-text"
+                        style="margin: 10px 20%;"
+                    >
+                        <li>This lab is dedicated to you! No other users are on this network</li>
+                        <li>
+                            Once you start the lab, you will have access to a root terminal of a
+                            Kali instance
+                        </li>
+                        <li>
+                            There is a custom application running on the target machine. The IP
+                            address will be shown to you when you click on Start
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card text-center" style="margin-top: 30px;">
+                <div class="card-body"  style="text-align: left !important;">
+                    <h3 class="card-title"><em class="fas fa-radiation-alt"></em>  Prohibited Activities</h3>
+                    <p>
+                        The following activities are strictly prohibited on this website unless
+                        otherwise explicitly stated as allowed in the mission statement:
+                    </p>
+
+                    <ul
+                         style="text-align: left !important;"
+                        class="card-text"
+                        style="margin: 10px 20%;"
+                    >
+                        <li>Using automated scanners</li>
+                        <li>Using brute force attacks</li>
+                        <li>Denial of Service attacks</li>
+                        <li>
+                            Attacking other student machines in challenges where you might achieve a
+                            shell on the vulnerable system
+                        </li>
+                        <li>Attacking the lab infrastructure</li>
+                    </ul>
+                    <p>
+                        If you are unsure about an activity, then please contact lab admin to
+                        confirm that it is allowed on our website.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

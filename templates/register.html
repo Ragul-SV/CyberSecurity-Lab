@@ -1,0 +1,77 @@
+{% extends 'header.html' %}{% block body %}
+
+<div class="login-wrap2">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Individual</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Organization</label>
+		<div class="login-form">
+			<form action='/regstu' method='POST'>
+				<div class="sign-in-htm">
+					<div style="text-align: center;color:white;margin-top: 10px;"><small>Sign up with credentials</small></div>
+					<div class="group">
+						<label for="user" class="label">Name</label>
+						<input id="user" name="username" type="text" class="input" required>
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Email</label>
+						<input id="pass" name="email" type="text" class="input" data-type="Email" required>
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Password</label>
+						<input id="pass" name="password" type="password" class="input" data-type="password" required>
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Repeat Password</label>
+						<input id="pass" name="reppassword" type="password" class="input">
+					</div>
+					<div class="group">
+						<input id="check" name="checkbox" type="checkbox" class="check">
+						<label for="check"><span class="icon"></span> I agree with the Privacy Policy</label>
+					</div>
+					<div class="group">
+						<input type="submit" class="button" value="Sign Up" >
+					</div>
+				</form>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<label style="color:white;" for="tab-1"><a href="login.html">Already Member?</a></label>
+				</div>
+			</div>
+			<div class="sign-up-htm">
+
+				<div style="text-align: center;color:white;margin-top: 10px;"><small>Sign up as organization</small></div>
+				<form action='/regfac' method='POST'>
+					<div class="group">
+						<label for="user" class="label">Name</label>
+						<input id="user" name="username" type="text" class="input" required>
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Organization Email</label>
+						<input id="pass" name="email" type="text" class="input" data-type="Email" required>
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Password</label>
+						<input id="pass" name="password" type="password" class="input" data-type="password" required>
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Repeat Password</label>
+						<input id="pass" name="reppassword" type="password" class="input" required>
+					</div>
+					<div class="group">
+						<input id="check1" name="checkbox" type="checkbox" class="check">
+						<label for="check1"><span class="icon"></span> I agree with the Privacy Policy</label>
+					</div>
+					<div class="group">
+						<input type="submit" class="button" value="Sign Up">
+					</div>
+				</form>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<label style="color:white;margin-bottom: 100px;" for="tab-1"><a href="/login">Already Member?</a></label>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+{% endblock %}

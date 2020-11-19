@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Skillsda Cybersecurity Lab</title>
+	<link rel="stylesheet" type="text/css" href="../static/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../static/project.css">
+	<link rel="stylesheet" type="text/css" href="../static/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="../static/sidenav.css">
+	<link rel="stylesheet" type="text/css" href="../static/button.css">
+	<link href="https://fonts.googleapis.com/css?family=Bellota|Sen&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+	<script src="register.js"></script>
+	<script src="sidenav.js"></script>
+
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">Category 1</a>
+		<a href="#">Category 2</a>
+		<a href="#">Category 3</a>
+		<a href="#">Category 4</a>
+		<a href="#">Category 5</a>
+		<a href="#">Category 6</a>
+		<a href="#">Category 7</a>
+		<a href="#">Category 8</a>
+		<a href="#">Category 9</a>
+		<a href="#">Category 10</a>
+	</div>
+
+	<!-- Use any element to open the sidenav -->
+
+	<div id="main">
+		<nav class="navbar static-top navbar-expand-lg navbar-dark" style="background: linear-gradient(to right, rgb(255, 255, 255,0.75), rgb(0, 12, 64,0.75)) !important;">
+			<div class="container">
+
+				<!-- Brand -->
+				<a class="navbar-brand" href="login.html">
+					<img src="images/skillsda logo.png" style="height:10%;width:20%;" alt="">
+				</a>
+
+				<!-- Collapse -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Links -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+				<!-- Left -->
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item" >
+						<a class="nav-link" href="https://skillsda.com" target="_blank">About</a>
+					</li>
+				</ul>
+
+				<!-- Right -->
+				<ul class="navbar-nav nav-flex-icons" style="margin-right: 0px !important;padding-right: 0px !important;">
+					<li class="nav-item" style="padding-left: 5px;padding-right: 5px;">
+						<a href="https://www.facebook.com/skillsda.chennai" class="nav-link" target="_blank">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li class="nav-item" style="padding-left: 5px;padding-right: 5px;">
+						<a href="https://twitter.com/skillsda" class="nav-link" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li class="nav-item" style="padding-left: 5px;padding-right: 5px;">
+						<a href="https://www.instagram.com/skillsda" class="nav-link" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li class="nav-item" style="padding-left: 5px;padding-right: 5px;">
+						<a href="register.html" class="nav-link border border-light rounded"
+						target="_blank">
+						Logout
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<div class="jumbotron" style="width:75%; margin:auto;margin-top: 50px; background: linear-gradient(to right, rgb(255, 255, 255,0.95), rgb(0, 12, 64,0.95))">
+	<div style="text-align: center;display: flex;"><em style="font-size: 2.6em;" class="fas fa-shield-alt"></em><span><h1>CyberSecurity Lab Dashboard (Organization)</h1><span></div>
+	<div style="margin-bottom: 20px;">
+		<button onClick="openNav()" class="btn btn-lg btn-success btn-effect btn-effect5 btn-effect5b"><span class="icon glyphicon"><i class="fas fa-clipboard-list"></i></span><span class="text">Categories</span></button>
+	</div>
+
+	<div class="row">
+		<div class="column">
+			<div class="card" style="background: linear-gradient(to right, #8a2387, #e94057, #f27121); color:white;border-radius: 25px;">
+				<h4>Total Labs</h4>
+				<p>100</p>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card" style="background: linear-gradient(to right, #00b4db, #0083b0); color:white;border-radius: 25px;">
+				<h4>Ongoing Labs</h4>
+				<p>20</p>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card" style="background: linear-gradient(to right, #11998e, #38ef7d); color:white;border-radius: 25px;">
+				<h4>Completed Labs</h4>
+				<p>30</p>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card" style="background: linear-gradient(to right, #0f0c29, #302b63, #24243e); color:white;border-radius: 25px;">
+				<h4>Badges Earned</h4>
+				<p>5</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+</div>
+</body>
+</html>
